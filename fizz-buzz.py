@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
 def checkio(number):
-    if number % 15 == 0:
+    if not number % 15:
         number = 'Fizz Buzz'
-    elif number % 5 == 0:
+    elif not number % 5:
         number = 'Buzz'
-    elif number % 3 == 0:
+    elif not number % 3:
         number = 'Fizz'
     else:
         number = str(number)
